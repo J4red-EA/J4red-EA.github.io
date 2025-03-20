@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine - Venta de Boletos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Cine</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#" id="registrobtn">Registro</a></li>
+                <li><a href="#" id="loginBtn">Iniciar Sesión</a></li>
+                <li><a href="quienesSomos.html">Quienes somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="movie-list">
+            <h2>Cartelera</h2>
+            <div class="movies-grid">
+                <div class="movie">
+                    <img src="img/spiderman2.jpg" alt="Película 1">
+                    <h3>Spiderman</h3>
+                    <button class="open-modal-btn" data-url="boletosSpiderman.html">Comprar Boletos</button>
+                </div>
+                <div class="movie">
+                    <img src="img/doctorStrange.jpg" alt="Película 2">
+                    <h3>Doctor Strange</h3>
+                    <button class="open-modal-btn" data-url="boletosDoctorStrange.html">Comprar Boletos</button>
+                </div>
+                <!-- Más películas aquí -->
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Cine. Todos los derechos reservados.</p>
+    </footer>
+     <!-- Modal de Registro -->
+     <div class="modal" id="registroModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Registro</h2>
+            <form id="registroForm">
+                <label for="registroNombre">Nombre:</label>
+                <input type="text" id="registroNombre" name="registroNombre" required>
+                <label for="registroEmail">Correo Electrónico:</label>
+                <input type="email" id="registroEmail" name="registroEmail" required>
+                <label for="registroPassword">Contraseña:</label>
+                <input type="password" id="registroPassword" name="registroPassword" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+    <!-- Modal de Inicio de Sesión -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <label for="nombreUsuario">Usuario:</label>
+                <input type="text" id="loginUsuario" name="loginUsuario" required>
+                <label for="loginPassword">Contraseña:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

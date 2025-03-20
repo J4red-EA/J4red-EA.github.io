@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 2rem;
+}
+
+.movie-list h2 {
+    margin-bottom: 1rem;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.movie {
+    background-color: #383838;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.movie img {
+    width: auto;
+    max-width: 100%;
+    max-height: 200px; /* Ajusta esta altura según tus necesidades */
+    margin: 0 auto 1rem auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(199, 23, 23, 0.5);
+}
+.movie img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.movie h3 {
+    margin: 1rem 0 0.5rem 0; 
+}
+.movie button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.movie button:hover {
+    background-color: #555;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+@media (max-width: 600px) {
+    .nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .movie {
+        padding: 0.5rem;
+    }
+
+    .footer {
+        position: relative;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/fondo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Hace que la imagen de fondo se mantenga fija al hacer scroll */
+    color: #fff; /* Ajusta el color del texto para que sea legible sobre el fondo */
+}
+
+.header, .main-content, .footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para mejorar la legibilidad */
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #414141;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+/* Botón de cierre */
+.close-btn {
+    color: #ffffff;
+    float: right;               
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {     
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, button {
+    margin-bottom: 10px;
+}
+
+
+
